@@ -1,0 +1,625 @@
+* ,*::after ,*::before
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* h1::after
+{
+    content: '';
+    width: 5px;
+    height: 10px;
+    background-color: #E61414;
+} */
+
+
+.navbar
+{
+    background-color: rgb(255,255, 255);
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    
+}
+.navbar .container
+{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .tittle
+{
+    align-self: center;
+}
+h1 span
+{
+    color: #E61414;
+}
+.navbar .nav-menu
+{
+    align-self: center;
+}
+.navbar .nav-menu ul
+{
+    list-style: none;
+    padding:  0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    position: relative;
+}
+.navbar .nav-menu li
+{
+    padding: 33px 0;
+}
+a
+{
+    text-decoration: none;
+}
+.navbar .nav-menu a
+{
+    color: black;
+}
+.navbar .icon
+{
+    align-self: center;
+}
+li::after
+{
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #E61414;
+    position: absolute;
+    top: 60px;
+    left: -3px;
+}
+
+
+
+
+
+.Header
+{
+    background-color: #EEEEEE;
+    height: 100vh;
+    display: flex;
+    
+}
+.container 
+{
+    width: 80%;
+    margin: auto;
+}
+.Header .container
+{
+    display: flex;
+}
+.Header .item
+{
+    width: 40%;
+    height: 400px;
+    /* background-color: antiquewhite; */
+    margin: auto;
+}
+
+.Header .item .text
+{
+    width: 85%;
+    
+    /* background-color: tomato; */
+}
+.Header .text h1
+{
+    
+    font-size: 65px;
+    font-family: "Amatic SC", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+.Header .text p
+{
+    font-size: 16px;
+}
+.Header .item .text .button 
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Header .item .text .button button
+{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    background-color: #E61414;
+    font-size: 16px;
+    border:0;
+    border-radius: 0 50px 50px 50px ;
+}
+.Header .item .text .button .play
+{
+    width:50%;
+    display: flex;
+    column-gap: 10px;
+}
+.Header .pic
+{
+    width: 40%;
+    height: 400px;
+    margin: 100px 5%;
+    margin: auto;
+}
+.Header .pic img
+{
+    width: 100%;
+    height: 500px;
+    
+}
+.clear-fix
+{
+    clear: both;
+}
+.Header .pic img:hover {
+    animation: shake 0.5s;
+  
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+
+
+.chefs 
+{
+    width: 100%;
+    height: 800px;
+}
+.title
+{
+    text-align: center;
+    margin: 50px 0;
+}
+.title p
+{
+    font-family: "Inter Tight", system-ui;
+    font-size: 14px;
+    font-weight:400;
+    color: #8B8D97;
+    margin: auto;
+}
+.title h2 
+{
+    font-family: "Amatic SC", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin: 0;
+}
+.title h2 span
+{
+    color: #E61414;
+}
+.chefs .container .box
+{
+    width: 100%;
+    display: flex;
+    column-gap: 25px;
+}
+.chefs .container .box .pic
+{
+    width: 33.333%;
+    height: 550px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 1s ;
+    position: relative;
+    overflow: hidden;
+}
+.chefs .container .box .pic .layer
+{
+    width: 50px;
+    background-color: rgba(255, 255, 255, .3);
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    border-radius: 5px;
+    padding: 10px 0;
+    transition: all .2s 1s;
+}
+.chefs .container .box .pic img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.chefs .container .box .pic h3
+{
+    font-family: "Inter Tight", system-ui;
+    margin: 5px;
+}
+.chefs .container .box .pic span,p
+{
+    font-size: 15px;
+    color: RGB(127, 127, 144);
+    margin: 5px;
+}
+.chefs .container .box .pic:hover
+{
+    transform: scale(1.1);
+}
+.chefs .container .box .pic:hover .layer
+{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+.gallary
+{
+    width: 100%;
+    height: 1200px;
+    background-color: #EEEEEE;
+}
+.gallary .container .box
+{
+    width: 100%;
+    height:900px ;
+    display: flex;
+    justify-content: space-between;
+
+}
+.gallary .container .box .item
+{
+    width: 32%;
+    height: 900px;
+}
+.gallary .container .box .item .pic
+{
+    width: 100%;
+    height: 300px;
+    background-color: #8B8D97;
+    position: relative;
+    overflow: hidden;
+    
+}
+.gallary .container .box .item .Pic
+{
+    width: 100%;
+    height: 500px;
+    background-color: tomato;
+    position: relative;
+    overflow: hidden;
+}
+.gallary .container .box .item .pic img
+{
+    width: 100%;
+    height: 300px;
+    transition: all 1s;
+}
+.gallary .container .box .item .Pic img
+{
+    width: 100%;
+    height: 500px;
+    transition: all 1s;
+}
+.gallary .container .box .item .pic .layer
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 1s;
+    
+    
+}
+.gallary .container .box .item .pic:hover .layer
+{
+    position: absolute;
+    top: 0;
+    
+
+}
+.gallary .container .box .item .pic:hover img
+{
+    scale: 1.2;
+}
+.gallary .container .box .item .Pic .layer
+{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 1s;
+}
+.gallary .container .box .item .Pic:hover .layer
+{
+    position: absolute;
+    top: 0;
+    
+
+}
+.gallary .container .box .item .Pic:hover img
+{
+    scale: 1.2;
+}
+.gallary .container .box .item .layer
+{
+    color: #fff;
+    text-align: center;
+}
+.gallary .container .box .item .layer p
+{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact
+{
+    width: 100%;
+    height: 1250px;
+}
+.contact .box
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.contact .box .item
+{
+    width: 49%;
+    height: 100px;
+    background-color: #f5f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2px; 
+    margin: 10px 0;
+    padding: 0 20px;
+    align-items: center;
+}
+.contact .box .item .text h3
+{
+    color: RGB(125, 125, 125);
+    font-size: 20px;
+    font-family: Inter sans-serif;
+    margin: 0;
+}
+.contact .box .item .text p 
+{
+    color: RGB(33, 37, 41);
+}
+.contact .box .item .b-g-icon
+{
+    width: 50px;
+    height: 50px;
+    background-color: #E61414;
+    border-radius: 25px;
+    position: relative;
+    
+}
+.contact .box .item .b-g-icon .icon
+{
+    position: absolute;
+    top: 15px;
+    left: 11px;
+}
+.contact .container .form 
+{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.contact .container .form .name
+{
+    float: left;
+    width: 49%;
+}
+.contact .container .form .email
+{
+   float: right;
+   width: 49%;
+}
+.contact .container .form input
+{
+    width: 100%;
+    height: 50px;
+}
+.contact .container .form textarea
+{
+    width: 100%;
+}
+.contact .container .form button
+{
+    background-color:#E61414 ;
+    width: 170px;
+    height: 45px;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    position: absolute;
+    left: 43%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.end
+{
+    height: 350px;
+    background-image: url(../photos/textured-metal-background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: #fff;
+
+} 
+.end .container .item
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.end .container .mealify 
+{
+    width: 25%;
+    height: 300px;
+    padding: 20px;
+}
+.end .container .mealify img
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: relative;
+    top: 15px;
+}
+.end .container .mealify h1
+{
+    float: left;
+    position: relative;
+    left: 10px;
+}
+.end .container .mealify p
+{
+    color: #fff;
+}
+.end .container .mealify span
+{
+    position: relative;
+    left: 100px;
+}
+.end .container .mealify .layer
+{
+    width: 100%;
+    height: 1px;
+    background-color: #8B8D97;
+}
+.end .container .mealify .icon
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+.end .container .subscribe
+{
+    width: 50%;
+    height: 300px;
+    padding: 20px;
+    /* background-color: chartreuse; */
+}
+.end .container .subscribe p
+{
+    color: #fff;
+}
+.end .container .subscribe input
+{
+    width: 80%;
+    height: 35px;
+}
+.end .container .subscribe button
+{
+    width: 19%;
+    height: 35px;
+    background-color: #E61414;
+    border: 0;
+}
+.end .container .subscribe .hambozo
+{
+    display: flex;
+
+}
+.end .container .subscribe .list
+{
+    width: 50%;
+}
+
+
+
+
+
+
+.end .container .touch
+{
+    width: 25%;
+    height: 300px;
+    /* background-color: cadetblue; */
+    padding: 20px;
+    
+}
+.end .container .touch .line
+{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.end .container .touch .icon
+{
+    width: 15%;
+    justify-self: center;
+    align-self: center;
+}
+.end .container .touch .text
+{width: 85%;}
